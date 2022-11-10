@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>CSS CHEATSHEET</title>
+</head>
+<body>
+  <nav id="navbar">
+    <Header id="header"><span class="headerInit">CSS</span> CHEATSHEET</Header>
+    <div class="divider"></div>
+    <ul>
+      <li><a class="nav-link" href="#about_CSS">ABOUT CSS</a></li>
+      <li><a class="nav-link" href="#SELECTORS">SELECTORS</a></li>
+      <li><a class="nav-link" href="#pseudo_Selectors">PSEUDO SELECTORS</a></li>
+      <li><a class="nav-link" href="#units">UNITS</a></li>
+      <li><a class="nav-link" href="#position">POSITION</a></li>
+      <li><a class="nav-link" href="#text_Styling">TEXT STYLING</a></li>
+      <li><a class="nav-link" href="#reference_and_key_concepts">REFERENCE AND KEY CONCEPTS</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="about_CSS">
+      <header>ABOUT CSS</header>
+      <article>
+        <p id="abouText">Cascading Style Sheets (CSS) is a <a href="https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet" target="_blank">stylesheet</a> language used to describe the presentation of a document written in <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"> HTML</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction"target="_blank"> XML </a> (including XML dialects such as <a href="https://developer.mozilla.org/en-US/docs/Web/SVG"target="_blank"> SVG </a>, <a href="https://developer.mozilla.org/en-US/docs/Web/MathML"target="_blank"> MathML</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/MathML"target="_blank"> XHTML</a>). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.<br>CSS is among the core languages of the open web and is standardized across Web browsers according to <a href="https://www.w3.org/Style/CSS/#specs"target="_blank"> W3C specifications</a>. Previously, the development of various parts of CSS specification was done synchronously, which allowed the versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, or even CSS3. There will never be a CSS3 or a CSS4; rather, everything is now CSS without a version number.<br>After CSS 2.1, the scope of the specification increased significantly and the progress on different CSS modules started to differ so much, that it became more effective to <a href="https://www.w3.org/Style/CSS/current-work"target="_blank"> develop and release recommendations separately per module</a>. Instead of versioning the CSS specification, W3C now periodically takes a snapshot of the latest stable state <a href="https://www.w3.org/TR/css/"target="_blank"> of the CSS specification</a> and individual modules progress. CSS modules now have version numbers, or levels, such as <a href="https://drafts.csswg.org/css-color-5/" target="_blank">CSS Color Module Level 5</a>.</p>
+      </article>
+    </section>
+    <section class="main-section"id="SELECTORS">
+      <header>SELECTORS</header>
+      <article >
+        <p>Universal Selector: <span>* {}</span><code>* {<br>font-family:sans-serif;<br>}</code></p>
+        <p>ID Selector: <span>#id {} </span><code>#header {<br>color: rgb(226, 214, 214);<br>}</code> </p>
+        <p>Class Selector: <span>.class {}</span><code>.divider {<br>border: 1px solid black;<br>display: inherit;<br>}</code> </p>
+        <p>Type Selector: <span>h1, h2 {}</span><code>body, main {<br>font-family: sans-serif;<br>}</code></p>
+        <p>Child Selector: <span>ul > li {}</span><code>p > span {<br>border: 1px solid rgb(92, 91, 91);<br>border-radius: 5px;<br>font-weight: bold;<br>text-align: center;<br>max-width: 300px;<br>min-width: 20px;<br>
+          display: flex;<br>
+          margin-left: 280px;<br>
+          margin-top: -23px;<br>
+          justify-content: center;<br>
+      }</code></p>
+        <p>Descendant Selector: <span>p  a {}</span><code>#navbar ul {<br>
+          padding: 0;<br>
+          overflow-x: hidden;<br>
+      }</code></p>
+      </article>
+    </section>
+    <div class="divider"></div>
+    <section class="main-section" id="pseudo_Selectors">
+      <header>PSEUDO SELECTORS</header>
+      <article >
+        <p>Mouse Hover Selector: <span>:hover</span></p>
+        <p>Active Link Selector: <span>:active</span></p>
+        <p>Focus Selector: <span>:focus</span></p>
+        <p>Link Selector: <span>:link</span></p>
+        <p>Visited Selector: <span>:visited</span></p>
+        <p>After Element: <span>:after</span></p>
+        <p>Before Element: <span>:before</span></p>
+        <p>First Child Selector: <span>:first-child</span></p>
+        <p>First Line Selector: <span>:first-line</span></p>
+        <p>First Letter Selector: <span>:first-letter</span></p>
+        <p>Checke Element Selector: <span>:checked</span></p>
+      </article>
+    </section>
+    <div class="divider"></div>
+    <section class="main-section"id="units">
+      <header>UNITS</header>
+      <article>
+        <P>Pixels: <span>px</span></P>
+        <P>Centimeter: <span>cm</span></P>
+        <P>Milimeter: <span>mm</span></P>
+        <P>Inches: <span>in</span></P>
+        <P>1pt = 1/72in: <span>pt</span></P>
+        <P>1pc = 72pt: <span>pc</span></P>
+        <P>Percentage: <span>%</span></P>
+        <P>1em = Font Size of Parent: <span>em</span></P>
+        <P>Root em: <span>rem</span></P>
+        <P>Viewable screen's Height: <span>vh</span></P>
+        <P>Viewable screen's Width: <span>vw</span></P>
+      </article>
+    </section>
+    <div class="divider"></div>
+    <section class="main-section" id="position">
+      <header>POSITION</header>
+      <article>
+        <p>Position: <span>position: static | relative | absolute | fixed sticky</span></p>
+        <p>Position Properties: <span>top | right | bottom | left</span></p>
+        <p>Float Element: <span>float: left | right | none</span></p>
+        <p>Z Index: <span>z-index: 3: | auto | none</span></p>
+        <p>Clear Floating: <span>clear: none | left | right | both</span></p>
+      </article>
+    </section>
+    <div class="divider"></div>
+    <section class="main-section" id="text_Styling">
+      <header>TEXT STYLING</header>
+      <article >
+        <P>Font Style: <span>font-style: normal | italic | oblique</span></P>
+        <P>Font Variant: <span>font-variant: normal | small-caps</span></P>
+        <P>Font Size: <span>font-size: 13px | 0.8rem | 80%</span></P>
+        <P>Font Weight: <span>font-weight: normal | bold | bolder | lighter | 100 - 900</span></P>
+        <P>Character Space: <span>letter-spacing: normal | 4px</span></P>
+        <P>Line Height: <span>line-height: normal | 34% | 3rem</span></P>
+        <P>font Family: <span>font-family: "Open Sans", sans-serif | 34% | 3rem</span></P>
+        <P>Horizontal Alignment: <span>text-align: left | right | center | justify</span></P>
+        <P>Vertical Alignment: <span>vertical-align: baseline | sub | super | top | text-top | middle | bottom | text-bottom | initial | 10px</span></P>
+        <P>Vertical Alignment Last: <span>vertical-align-last: auto | left | right | center | justify | start | end | inherit | initial | 10px</span></P>
+        <P>Text Decoration: <span>vertical-decoration: none | underline | overline | lint-troough</span></P>
+        <P>Text Justify: <span>text-justify: auto | inter-word | inter-character | none | initial | inherit</span></P>
+        <P>Text Shadow: <span>text-shadow: h-shadow v-shadow | blur-radius color | none | initial | inherit</span></P>
+        <P>Text Transform: <span>text-transform: capitalise | lowercase | uppercase</span></P>
+        <P>Indent First Line: <span>text-indent: 23px</span></P>
+      </article>
+    </section>
+    <section class="main-section" id="reference_and_key_concepts">
+      <header>REFERENCE AND KEY CONCEPTS</header>
+      <ul>
+        <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax" target="_blank"> syntax and forms of the language</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity" target="_blank"> Specificity</a>,<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity" target="_blank"> inheritance</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade" target="_blank"> the Cascade</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units"> CSS units and values</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions" target="_blank"> functional notations</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model" target="_blank"> Box model</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing" target="_blank"> margin collapse</a></li>
+        <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block" target="_blank"> containing block</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context" target="_blank"> Stacking</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context" target="_blank"> block-formatting</a> contexts</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/initial_value" target="_blank"> Initial</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/computed_value" target="_blank"> computed</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/used_value" target="_blank"> used</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/actual_value" target="_blank"> actual</a> values</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties" target="_blank"> CSS shorthand properties</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout" target="_blank"> CSS Flexible Box Layout</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank"> CSS Grid Layout</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors" target="_blank"> CSS selectors</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries" target="_blank"> Media queries</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation" target="_blank"> Animation</a></li>
+      </ul>
+      <article>
+        <p id="borderless">All documentation in this page was taken from: <a href="https://developer.mozilla.org/">MDN</a></p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
